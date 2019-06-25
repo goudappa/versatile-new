@@ -39,6 +39,7 @@ import { MobileAppDevelopmentComponent } from './services/mobile-app-development
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 // import {MatPaginatorModule} from '@angular/material';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -81,6 +82,7 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
     BrowserModule,
     AppRoutingModule,
     NgxPaginationModule,
+    BrowserAnimationsModule,
     // MatPaginatorModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, data: [{ page: '' }] },

@@ -89,7 +89,7 @@ hr.red {display:none;background: #ec2029;width: 100px;height: 3px;margin-left: 0
 
 /*Our Services css*/
 .service-block{overflow: hidden;margin-bottom: 15px; background: #ffffff;border: 1px solid #CCCCCC;text-align:center;box-sizing:border-box;}
-.grid-item {cursor:pointer;padding:15px;position:relative;text-align:center;-webkit-transition:all 1.5s ease;-ms-transition:all 1.5s ease;	-o-transition:all 1.5s ease;-moz-transition:all 1.5s ease;transition:all 1.5s ease;}
+.grid-item {cursor:pointer;min-height:350px;padding:15px;position:relative;text-align:center;-webkit-transition:all 1.5s ease;-ms-transition:all 1.5s ease;	-o-transition:all 1.5s ease;-moz-transition:all 1.5s ease;transition:all 1.5s ease;}
 .grid-item:hover{background-color:#ec2029; /*cursor:none;*/-webkit-transition: all 2s ease;-moz-transition: all 2s ease;transition: all 2s ease;}
 .service-img {-webkit-filter: invert(0%); /* Safari 6.0 - 9.0 */filter: invert(0%);margin: 20px 0;}
 .grid-item:hover > h3, .grid-item:hover > p {color:#ffffff;}
@@ -194,9 +194,12 @@ a.req_btn {font-size: 25px;color: #ffffff;text-decoration: none;/* background: #
 div#slideshow {position: absolute;top: 0;left: 13%;}
 
 /*Fixed-social icons*/
+.rem-icons{list-style-type: none;padding: 0;margin-bottom: 0}
+.rem-icons li {margin: 5px 0;}
+.plus1, .minus1{cursor: pointer;}
 .fixed-social-wrap {width:50px;padding:0;position: fixed;bottom: 0;right: 1%;z-index: 9999;}
 ul.fixed-social{padding:0;}
-ul.fixed-social li, ul.hidden-fixed-social li {margin: 10px 0;list-style-type: none;}
+ul.fixed-social li, ul.hidden-fixed-social li {margin: 5px 0;list-style-type: none;}
 .hidden-fixed-social{display:none; position: fixed;bottom: 21%;right: 30px;z-index: 9999;transition: all 0.4s ease-in-out;}
 
 /*Choose Us Css*/
@@ -665,6 +668,26 @@ ul.contact-details li {
 }
 }
 
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .grid-item {
+    min-height: 380px;
+    max-height: 400px;
+  }
+ }
+
+ @media (min-width: 768px) and (max-width: 991.98px) { 
+  .client-slider .carousel-item img {
+    margin: 10px;
+    width: 90px;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) { 
+    .client-slider .carousel-item img {
+      margin: 14px;
+      }
+   }
+
 @media (min-width: 768px) and (max-width: 1199.98px) { 
   .hidden-fixed-social {
     bottom: 185px;
@@ -676,4 +699,69 @@ ul.contact-details li {
   a.req_btn {
     padding: 10px 25px;
   }
+  .grid-item {
+    min-height: 400px;
+    max-height: 400px;
+  }
  }
+
+ /* floating social */
+.fl-fl {
+  background: #00a3c8;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 190px;
+  position: fixed;
+  right: -150px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.cust-social1 {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 0;
+  width: 40px;
+  margin-left: 8px;
+}
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  color: #fff !important;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px!important;
+  vertical-align: top!important;
+}
+.float-fb {
+  top: 160px;
+}
+.float-tw {
+  top: 215px;
+}
+.float-gp {
+  top: 270px;
+}
+.float-rs {
+  top: 325px;
+}
+.float-ig {
+  top: 380px;
+}
+.float-pn {
+  top: 435px;
+}
+.im-wdth {
+  width: 36px;
+}
+/* Floating Social Media Bar Style Ends Here */
