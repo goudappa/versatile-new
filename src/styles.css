@@ -18,7 +18,14 @@
     font-family: "muli";
     src: url("assets/fonts/muli/Muli-Regular.ttf");
   }
-  
+  @font-face {
+    font-family: "muli-italic";
+    src: url("assets/fonts/muli/Muli-Italic.ttf");
+  }
+  @font-face {
+    font-family: "muli-bold";
+    src: url("assets/fonts/muli/Muli-Bold.ttf");
+  }
   body {font-family: 'muli', sans-serif;font-size: 14px;color: #000000;line-height: 1.7em;} 
   h1 {font-family: 'Poppins-ExtraBold', sans-serif;}
   h2 {font-family: 'Poppins-Bold', sans-serif;}

@@ -1,0 +1,169 @@
+<!--  banner -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12 nopad">
+			<div class="contanct-img">
+				<img src="assets/images/banners/aboutus.jpg" class="img-fluid" alt="...">
+				<h1>About Us</h1>
+			</div>
+		</div>
+	</div>
+</div>
+<!--  ./ banner -->
+
+<!-- inner content -->
+<!-- about us -->
+<div class="container revealOnScroll" data-animation="fadeInUp">
+	<div class="row mt-5 mb-3">
+		<div class="col-sm-12">
+			<h2>About us</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 col-md-6">
+			<p>
+				<b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+				the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+				and scrambled it to make a type specimen book.
+			</p>
+			<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+				essentially unchanged. It has survived not only five centuries, but also the leap into electronic
+				typesetting, remaining
+				essentially unchanged.</p>
+			<h4>We are experts in mobile applications</h4>
+			<p class="expert">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+				been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+				type and scrambled it to make a type specimen book</p>
+		</div>
+		<div class="col-md-6 col-sm-12 ">
+			<div class="row">
+				<div class="col-sm-12 mission-tabs">
+					<ul>
+						<li (click)="showMisionScreen()"
+							[ngStyle]="{background:showMsion==true? '#efefef': '' , color:showMsion==true? 'red': '' }">
+							Mission
+						</li>
+						<li (click)="showVisionScreen()"
+							[ngStyle]="{background:showVision ==true ? '#efefef': '',color:showVision==true? 'red': '' }">
+							Vision</li>
+						<li (click)="showValuesScreen()"
+							[ngStyle]="{background:showValues == true? '#efefef': '',color:showValues==true? 'red': ''  }">
+							Values</li>
+					</ul>
+				</div>
+				<div class="col-sm-12 about-tabs" *ngIf="showMsion">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+						the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+						of type
+						and scrambled it to make a type specimen book.</p>
+				</div>
+				<div class="col-sm-12 about-tabs" *ngIf="showVision">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+						the industry's standard dummy text ever.</p>
+				</div>
+				<div class="col-sm-12 about-tabs" *ngIf="showValues">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+						the industry's standard dummy text ever since the 1500s.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- about us -->
+<!-- our History -->
+<div class="container-fluid our-hostory revealOnScroll" data-animation="fadeInUp">
+	<div class="container">
+		<div class="row pt-5 pb-3">
+			<div class="col-sm-12">
+				<h2>Our History</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<button type="button" class="btn btn-arrow-right right-arrow" (click)="show2017Screen()"
+					[ngStyle]="{background:show2017==true? 'red': '' , color:show2017==true? '#ffffff': '' }">2016 -
+					2017</button>
+				<button type="button" class="btn btn-arrow-right" (click)="show2018Screen()"
+					[ngStyle]="{background:show2018==true? 'red': '' , color:show2018==true? '#ffffff': '' }">2017 -
+					2018</button>
+				<button type="button" class="btn  btn-arrow-right" (click)="show2019Screen()"
+					[ngStyle]="{background:show2019==true? 'red': '' , color:show2019==true? '#ffffff': '' }">2018 -
+					2019</button>
+				<br>
+				<div class="row">
+					<div class="col-md-12 " *ngIf="show2017">
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+							been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+							galley of type and scrambled it to make a type specimen book. It has survived not only five
+							centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+							It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+							passages, and more recently with desktop
+						</p>
+					</div>
+					<div class="col-md-12" *ngIf="show2018">
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+							been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+							galley of type and scrambled it to make a type specimen book. It has survived not only five
+							centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+						</p>
+					</div>
+					<div class="col-md-12" *ngIf="show2019">
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+							been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+							galley of type and scrambled it to make a type specimen book. It has survived not only five
+							centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+							It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+							passages.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 pb-5">
+				<img src="/assets/images/our-history.jpg" class="img-fluid" alt="...">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- our History -->
+<!-- our skills -->
+<div class="container pb-5 revealOnScroll" data-animation="fadeInUp">
+	<div class="row pt-5 pb-3">
+		<div class="col-sm-12">
+			<h2>Our Skills</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<img src="/assets/images/skills.jpg" class="img-fluid" alt="...">
+		</div>
+		<div class="col-md-6">
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+				industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+				scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+				into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+				release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+				software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+				industry's standard dummy text ever since the 1500s, </p>
+		</div>
+	</div>
+</div>
+<!-- our skills -->
+<!--  inner content -->
+
+<div class="wrapper request-callback revealOnScroll" data-animation="fadeInUp">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-8">
+				<h2 class="header">Request a call back <img src="assets/images/28.png" class="img-fluid"
+						alt="Request a call back"></h2>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4">
+				<a href="" class="req_btn">Request Now</a>
+			</div>
+		</div>
+	</div>
+</div>

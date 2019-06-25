@@ -14,7 +14,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PortfolioInnerComponent } from './portfolio-inner/portfolio-inner.component';
 import { IndustriesComponent } from './components/industries/industries.component';
-import {NgxPaginationModule} from 'ngx-pagination';
+import { NgxPaginationModule } from 'ngx-pagination';
 import { GatiComponent } from './portfolio/gati/gati.component';
 import { MywayCarComponent } from './portfolio/myway-car/myway-car.component';
 import { DineroComponent } from './portfolio/dinero/dinero.component';
@@ -36,6 +36,7 @@ import { SeeWheelersComponent } from './portfolio/see-wheelers/see-wheelers.comp
 import { SolistaComponent } from './portfolio/solista/solista.component';
 import { SuwaahComponent } from './portfolio/suwaah/suwaah.component';
 import { MobileAppDevelopmentComponent } from './services/mobile-app-development/mobile-app-development.component';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
 // import {MatPaginatorModule} from '@angular/material';
 
 
@@ -73,7 +74,8 @@ import { MobileAppDevelopmentComponent } from './services/mobile-app-development
     SeeWheelersComponent,
     SolistaComponent,
     SuwaahComponent,
-    MobileAppDevelopmentComponent
+    MobileAppDevelopmentComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
@@ -110,8 +112,9 @@ import { MobileAppDevelopmentComponent } from './services/mobile-app-development
       { path: 'see-weeler', component: SeeWheelersComponent, data: [{ page: 'see-weeler' }] },
       { path: 'solista', component: SolistaComponent, data: [{ page: 'solista' }] },
       { path: 'suwaah', component: SuwaahComponent, data: [{ page: 'suwaah' }] },
-      { path: 'mobile-app', component: MobileAppDevelopmentComponent, data: [{ page: 'mobile-app' }] }
-      
+      { path: 'mobile-app', component: MobileAppDevelopmentComponent, data: [{ page: 'mobile-app' }] },
+      { path: 'aboutus', component: AboutusComponent, data: [{ page: 'aboutus' }] }
+
     ], { useHash: true })
 
   ],
