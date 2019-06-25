@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Poppins-ExtraBold";
+    src: url("assets/fonts/poppins/Poppins-ExtraBold.ttf");
+  }
+  
+  @font-face {
+    font-family: "Poppins-SemiBold";
+    src: url("assets/fonts/poppins/Poppins-SemiBold.ttf");
+  }
+  
+  @font-face {
+    font-family: "Poppins-Bold";
+    src: url("assets/fonts/poppins/Poppins-Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: "muli";
+    src: url("assets/fonts/muli/Muli-Regular.ttf");
+  }
+  
+  body {font-family: 'muli', sans-serif;font-size: 14px;color: #000000;line-height: 1.7em;} 
+  h1 {font-family: 'Poppins-ExtraBold', sans-serif;}
+  h2 {font-family: 'Poppins-Bold', sans-serif;}
+  h3, h4, h5, h6 {font-family: 'Poppins-SemiBold', sans-serif;}

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Versatile Mobitech</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/images/versatile_mobitech.png">
+  <!--CSS Files-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+
+  <!--JS Files-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+  <style>
+body{font-family: 'Muli', sans-serif;color: #000000;}
+  </style>
+
+    
+</head>
+<body>
+  <app-root></app-root>
+</body>
+<!-- <script src="assets/js/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script> -->
+
+<script type="text/javascript">
+
+jQuery(document).ready(function(){
+
+  /*RevearonScroll JS*/
+  /*Trigger animation on each scrool up & scroll down*/
+  $(function() {
+
+      var $window           = $(window),
+          win_height_padded = $window.height() * 1.1,
+          isTouch           = Modernizr.touch;
+
+      if (isTouch) { $('.revealOnScroll').addClass('animated'); }
+
+      $window.on('scroll', revealOnScroll);
+
+      function revealOnScroll() {
+        var scrolled = $window.scrollTop(),
+            win_height_padded = $window.height() * 1.1;
+
+        // Showed...
+        $(".revealOnScroll:not(.animated)").each(function () {
+          var $this     = $(this),
+              offsetTop = $this.offset().top;
+
+          if (scrolled + win_height_padded > offsetTop) {
+            if ($this.data('timeout')) {
+              window.setTimeout(function(){
+                $this.addClass('animated ' + $this.data('animation'));
+              }, parseInt($this.data('timeout'),10));
+            } else {
+              $this.addClass('animated ' + $this.data('animation'));
+            }
+          }
+        });
+        // Hidden...
+      $(".revealOnScroll.animated").each(function (index) {
+          var $this     = $(this),
+              offsetTop = $this.offset().top;
+          if (scrolled + win_height_padded < offsetTop) {
+            $(this).removeClass('animated fadeInUp flipInX lightSpeedIn')
+          }
+        });
+      }
+      revealOnScroll();
+      });
+/*RevearonScroll JS End*/       
+
+    jQuery("#expand-social").click(function(){
+      jQuery(".hidden-fixed-social").slideToggle("slow");  
+      //jQuery(".hidden-fixed-social").slideToggle(1000).addClass("animated slideOutUp");
+    });
+
+/*Testimonial Slider JS*/
+    // jQuery("#testimonial-slider").owlCarousel({
+    //     items:1,
+    //     itemsDesktop:[2000,1],
+    //     itemsDesktopSmall:[980,11],
+    //     itemsTablet:[768,1],
+    //     itemsMobile:[650,1],
+    //     pagination:true,
+    //     navigation:false,
+    //     slideSpeed:1000,
+    //     autoPlay:true
+    // });
+
+
+/*RevealBox Animation --> Welcome to versatile section*/
+jQuery('.revealedBox').each(function(i){ 
+
+var childrenSpan = jQuery(this).children('span').length;
+
+jQuery(this).addClass('childrenSpan-' + childrenSpan);  
+
+if(jQuery(window).scrollTop() + jQuery(window).height() > jQuery(this).offset().top + jQuery(this).outerHeight() ){ 
+  jQuery(this).addClass('revealedBox-in');       
+}   
+}); 
+jQuery(window).scroll(function() { 
+jQuery('.revealedBox').each(function(i){  
+if(jQuery(window).scrollTop() + jQuery(window).height() > jQuery(this).offset().top ){ 
+  jQuery(this).addClass('revealedBox-in');       
+}   
+}); 
+});
+
+
+// add the animation to the modal
+jQuery(".modal").each(function(index) {
+  jQuery(this).on('show.bs.modal', function(e) {
+    var open = jQuery(this).attr('data-easein');
+    if (open == 'shake') {
+      jQuery('.modal-dialog').velocity('callout.' + open);
+    } else if (open == 'pulse') {
+      jQuery('.modal-dialog').velocity('callout.' + open);
+    } else if (open == 'tada') {
+      jQuery('.modal-dialog').velocity('callout.' + open);
+    } else if (open == 'flash') {
+      jQuery('.modal-dialog').velocity('callout.' + open);
+    } else if (open == 'bounce') {
+      jQuery('.modal-dialog').velocity('callout.' + open);
+    } else if (open == 'swing') {
+      jQuery('.modal-dialog').velocity('callout.' + open);
+    } else {
+      jQuery('.modal-dialog').velocity('transition.' + open);
+    }
+
+  });
+});
+});
+</script>
+ <script>
+  /* ========================================== 
+scrollTop() >= 300
+Should be equal the the height of the header
+========================================== */
+
+jQuery(window).scroll(function(){
+    if (jQuery(window).scrollTop() >= 70) {
+      jQuery('nav').addClass('fixed-header');
+      jQuery('.main-menu .col-md-4').addClass('text-center');
+    }
+    else {
+      jQuery('nav').removeClass('fixed-header');
+      //jQuery('nav div').removeClass('visible-title');
+    }
+});
+
+/* 2 carousel */
+$('#carousel-2').carousel({
+      interval: 6000,
+      wrap: true,
+      keyboard: true
+ });
+ 
+ 
+ /* 3 carousel */
+ $('#carousel-3').carousel({
+     interval: 8000,
+     wrap: true,
+     keyboard: true
+ });
+
+ /* 4 carousel example with jumbotron */
+ $('#carousel-4').carousel({
+     interval: 10000,
+     wrap: true,
+     keyboard: true
+ });
+
+
+  </script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+<!-- <script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script> -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script>
+</html>

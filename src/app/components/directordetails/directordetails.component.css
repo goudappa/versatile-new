@@ -1,0 +1,28 @@
+.director-details {background:url('/assets/images/director-bg.jpg') no-repeat;background-size: 100%;height: 900px;position:relative;}
+.director-content {width:55%; height:100%; background-image:linear-gradient(to right, rgba(240,240,240,1) 82%, rgba(0,0,0,0));padding: 30px 40px 30px 80px;}
+.director-content p{line-height:2rem;}
+.director-content h1 {font-size: 3rem;font-weight: 700;}
+.director-content h5 > span {margin-left:100px;}
+
+@media (max-width: 767.98px) {
+    .director-content {
+        width: 100%;
+        background-image: none;
+        padding: 270px 0 0 0;
+    }
+    .director-details {
+        height: auto;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .director-content {
+        padding: 480px 0 0 0;
+    }
+ }
+
+ @media (min-width: 768px) and (max-width: 991.98px) { 
+    .director-content {
+        width: 70%;
+    }
+  }
