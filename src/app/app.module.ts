@@ -38,6 +38,7 @@ import { SuwaahComponent } from './portfolio/suwaah/suwaah.component';
 import { MobileAppDevelopmentComponent } from './services/mobile-app-development/mobile-app-development.component';
 // import {MatPaginatorModule} from '@angular/material';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -79,6 +80,7 @@ import { MobileAppDevelopmentComponent } from './services/mobile-app-development
     BrowserModule,
     AppRoutingModule,
     NgxPaginationModule,
+    BrowserAnimationsModule,
     // MatPaginatorModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, data: [{ page: '' }] },

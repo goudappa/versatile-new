@@ -46,7 +46,38 @@
 </div>
 
 <div class="container fixed-social-wrap">
+
+
+  <!-- <p *ngIf="show" [@fadeInOut-1]>0.3 s</p>
+    <p *ngIf="show" [@fadeInOut-2]>0.7 s</p>
+    <p *ngIf="show" [@fadeInOut-3]>1 s</p>
+    <button  class="btn btn-primary" (click)="show = !show">show / hide</button> -->
+
+
   <div class="row">
+    <ul class="rem-icons">
+      <li *ngIf="!show" [@fadeInOut-3]><a href="" target="_blank"><img src="assets/images/skype.png" class="img-fluid"
+            alt="Skype"></a></li>
+      <li *ngIf="!show" [@fadeInOut-2]><a href="https://wa.me/919701930011" target="_blank"><img
+            src="assets/images/49.png" class="img-fluid" alt="WhatsApp"></a></li>
+      <li *ngIf="!show" [@fadeInOut-1]><a href="mailto:sales@versatilemobitech.com"><img src="assets/images/48.png"
+            class="img-fluid" alt="Mail Us"></a></li>
+    </ul>
+
+    <ul class="fixed-social animated slideInUp slow">
+      <li id=""><a href="tel:+91 9701930011">
+        </a>
+        <div (click)="show = !show">
+          <span class="plus1" *ngIf="show"><img src="assets/images/9.png" alt="Plus"></span>
+          <span class="minus1" *ngIf="!show"><img src="assets/images/minus.png" alt="minus"></span>
+        </div>
+      </li>
+      <li><a href="tel:+91 9701930011"><img src="assets/images/8.png" class="img-fluid" alt="contact"></a></li>
+      <li><img src="assets/images/7.png" class="img-fluid" alt="message"></li>
+    </ul>
+  </div>
+
+  <!-- <div class="row">
     <ul class="hidden-fixed-social animated slideInUp slow">
         <li><a href="" target="_blank"><img src="assets/images/skype.png" class="img-fluid"
           alt="Skype"></a></li>
@@ -66,8 +97,29 @@
       <li><a href="tel:+91 9701930011"><img src="assets/images/8.png" class="img-fluid" alt="contact"></a></li>
       <li><img src="assets/images/7.png" class="img-fluid" alt="message"></li>
     </ul>
-  </div>
+  </div> -->
+
 </div>
+
+<!-- Floating Social Media bar Starts -->
+<!-- <div class="float-sm">
+  <div class="fl-fl float-fb">
+    <a href="https://wa.me/919177679797" target="_blank">
+      <img src="assets/images/48.png" class="im-wdth" alt="whatsapp"> <span>Whatsapp me</span>
+    </a>
+  </div>
+  <div class="fl-fl float-tw">
+    <a href="tel:+91 9177 679 797">
+      <img src="assets/images/7.png" class="im-wdth" alt="whatsapp"> <span>Ring me</span>
+    </a>
+  </div>
+  <div class="fl-fl float-gp">
+    <a href="mailto:dr.kirthi.paladugu@gmail.com">
+      <img src="assets/images/48.png" class="im-wdth" alt="whatsapp"> <span>Drop a mail</span>
+    </a>
+  </div>
+</div> -->
+<!-- Floating Social Media bar Ends -->
 
 <div class="wrapper welcomediv">
   <div class="container">
