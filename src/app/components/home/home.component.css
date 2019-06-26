@@ -765,28 +765,45 @@ ul.contact-details li {
   width: 36px;
 }
 /* Floating Social Media Bar Style Ends Here */
-/* DEMO-SPECIFIC STYLES */
-.typewriter h1 {
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+
+/** typing animations **/
+.gg{
+  color: #fff; 
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 46px;
+  line-height: initial;
+  font-weight: 800;
+  width: 30em;
+  font-family: 'Poppins-Bold', sans-serif;
+  animation: type 4s steps(60, end); 
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+.gg:nth-child(2){
+  animation: type2 5s steps(60, end);
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
+
+span{
+  animation: blink 1s infinite;
 }
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}
+/** typing animations ends here**/
