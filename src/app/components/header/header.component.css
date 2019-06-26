@@ -169,6 +169,6 @@ ul.contact-details li {
 .nav-item:hover::after{width:100%;}
 .nav-link{padding:15px 5px;transition:0.2s;}
 .dropdown-item:focus, .dropdown-item:hover{background: #dddddd;}
-.hd-tp{padding-top: 20px}
+.hd-tp{padding-top: 10px}
 
 
