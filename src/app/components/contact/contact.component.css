@@ -160,7 +160,6 @@ a.req_btn {
 	bottom: -28px;
 	width: 50px;
 	height: 10px;
-	background-color: #1384ff
+    background-color: #1384ff;
+    /* background-image: url('../../../assets/images/31.png') */
 }
-/** map style ends **/
-

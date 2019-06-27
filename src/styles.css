@@ -31,6 +31,9 @@
   h2 {font-family: 'Poppins-Bold', sans-serif;}
   h3, h4, h5, h6 {font-family: 'Poppins-SemiBold', sans-serif;}
 
+
+
+
   #chartdiv {
     margin-top:12px;
     width	: 100%;
@@ -50,19 +53,23 @@ display:none!important;
   .map-marker.map-clickable {
       cursor: pointer;
   }
-  .pulse {
-      width: 10px;
-      height: 10px;
-      border: 5px solid #f7f14c;
+  .pulse-One {
+      width: 250px;
+      height: 240px;
+      /* border: 5px solid #f7f14c; */
       -webkit-border-radius: 30px;
       -moz-border-radius: 30px;
       border-radius: 30px;
-      background-color: #716f42;
+      /* background-color: #716f42; */
+      /* background-image: url('../src/assets/images/7.png'); */
+      background-repeat: no-repeat;
+            /* background-image: url(31.png); */
       z-index: 10;
       position: absolute;
     }
   .map-marker .dot {
       border: 10px solid #fff601;
+      /* background-image: url('../src/assets/images/31.png'); */
       background: transparent;
       -webkit-border-radius: 60px;
       -moz-border-radius: 60px;

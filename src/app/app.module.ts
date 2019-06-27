@@ -1,45 +1,48 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { NgxPaginationModule } from 'ngx-pagination';
+
+import { AmChartsModule } from 'amcharts3-angular2';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { PortfolioInnerComponent } from './portfolio-inner/portfolio-inner.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { DirectordetailsComponent } from './components/directordetails/directordetails.component';
+import { DirectorsComponent } from './components/directors/directors.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { DirectorsComponent } from './components/directors/directors.component';
-import { ServicesComponent } from './components/services/services.component';
-import { DirectordetailsComponent } from './components/directordetails/directordetails.component';
-import { UiUxDesignComponent } from './components/ui-ux-design/ui-ux-design.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { PortfolioInnerComponent } from './portfolio-inner/portfolio-inner.component';
 import { IndustriesComponent } from './components/industries/industries.component';
-import { NgxPaginationModule } from 'ngx-pagination';
-import { GatiComponent } from './portfolio/gati/gati.component';
-import { MywayCarComponent } from './portfolio/myway-car/myway-car.component';
-import { DineroComponent } from './portfolio/dinero/dinero.component';
-import { GohostelComponent } from './portfolio/gohostel/gohostel.component';
-import { DhukanComponent } from './portfolio/dhukan/dhukan.component';
-import { TripcareComponent } from './portfolio/tripcare/tripcare.component';
-import { UcodComponent } from './portfolio/ucod/ucod.component';
-import { GoodtimesComponent } from './portfolio/goodtimes/goodtimes.component';
+import { ServicesComponent } from './components/services/services.component';
+import { UiUxDesignComponent } from './components/ui-ux-design/ui-ux-design.component';
 import { AlMasaoodComponent } from './portfolio/al-masaood/al-masaood.component';
+import { DhukanComponent } from './portfolio/dhukan/dhukan.component';
+import { DineroComponent } from './portfolio/dinero/dinero.component';
 import { EvexproComponent } from './portfolio/evexpro/evexpro.component';
+import { GatiComponent } from './portfolio/gati/gati.component';
+import { GohostelComponent } from './portfolio/gohostel/gohostel.component';
+import { GoodtimesComponent } from './portfolio/goodtimes/goodtimes.component';
 import { IndiaCmeComponent } from './portfolio/india-cme/india-cme.component';
 import { KoachKonnectComponent } from './portfolio/koach-konnect/koach-konnect.component';
 import { LohaComponent } from './portfolio/loha/loha.component';
 import { MahaliComponent } from './portfolio/mahali/mahali.component';
+import { MywayCarComponent } from './portfolio/myway-car/myway-car.component';
 import { QuestComponent } from './portfolio/quest/quest.component';
 import { SamathaComponent } from './portfolio/samatha/samatha.component';
 import { SandalsComponent } from './portfolio/sandals/sandals.component';
 import { SeeWheelersComponent } from './portfolio/see-wheelers/see-wheelers.component';
 import { SolistaComponent } from './portfolio/solista/solista.component';
 import { SuwaahComponent } from './portfolio/suwaah/suwaah.component';
+import { TripcareComponent } from './portfolio/tripcare/tripcare.component';
+import { UcodComponent } from './portfolio/ucod/ucod.component';
 import { MobileAppDevelopmentComponent } from './services/mobile-app-development/mobile-app-development.component';
-import { AboutusComponent } from './components/aboutus/aboutus.component';
-// import {MatPaginatorModule} from '@angular/material';
-
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -82,6 +85,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     NgxPaginationModule,
+    AmChartsModule,
     BrowserAnimationsModule,
     // MatPaginatorModule,
     RouterModule.forRoot([
